@@ -54,4 +54,6 @@ export default defineUserConfig({
       isSearchable: (page) => page.path !== "/",
     }),
   ],
+
+  dest: "./dist",
 });
