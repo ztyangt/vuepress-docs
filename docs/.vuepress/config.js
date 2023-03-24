@@ -1,7 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import { defaultTheme } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
-import sidebar from "./config/sidebar.js";
+// import sidebar from "./config/sidebar.js";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -24,16 +24,16 @@ export default defineUserConfig({
         text: "文档",
         children: [
           {
-            text: "GoAPI",
-            link: "/goapi/",
-          },
-          {
             text: "git命令",
             link: "/git/",
           },
+          // {
+          //   text: "linux命令01",
+          //   link: "/linux1/",
+          // },
           {
-            text: "linux命令",
-            link: "/linux/",
+            text: "GoAPI",
+            link: "/goapi/",
           },
         ],
       },
@@ -43,7 +43,7 @@ export default defineUserConfig({
       },
     ],
 
-    sidebar: sidebar,
+    // sidebar: sidebar,
 
     logo: "/images/favicon.svg",
     repo: "https://github.com/ztyangt/goAPI",
